@@ -62,7 +62,7 @@ class MediaConnectionViewController: UIViewController, UINavigationControllerDel
 
         // SKWPeer has many options. Please check the document. >> http://nttcom.github.io/skyway/docs/
 
-        self.peer = SKWPeer(id: nil, options: option)
+        self.peer = SKWPeer(id: /*nil*/"momo", options: option)
         self.setCallbacks(peer: self.peer)
         //////////////////////////////////////////////////////////////////////
         ////////////////// END: Initialize SkyWay Peer ///////////////////////
@@ -232,7 +232,7 @@ class MediaConnectionViewController: UIViewController, UINavigationControllerDel
         //////////////////////////////////////////////////////////////////////
         ////////////////// START: Call SkyWay Peer   /////////////////////////
         //////////////////////////////////////////////////////////////////////
-        self.mediaConnection = self.peer?.call(withId: strDestId, stream: self.msLocal)
+        self.mediaConnection = self.peer?.call(withId: "mother"/*strDestId*/, stream: self.msLocal)
         
         self.setMediaCallbacks(media: self.mediaConnection)
         //////////////////////////////////////////////////////////////////////
@@ -466,9 +466,9 @@ class MediaConnectionViewController: UIViewController, UINavigationControllerDel
             if let btn: UIButton = self.view.viewWithTag(ViewTag.TAG_WEBRTC_ACTION.rawValue) as? UIButton {
                 var strTitle: String = "---"
                 if (!self.bConnected) {
-                    strTitle = "Call to"
+                    strTitle = "かける"/*"Call to"*/
                 } else {
-                    strTitle = "End call"
+                    strTitle = "おわる"/*"End call"*/
                 }
                 btn.setTitle(strTitle, for: UIControlState.normal)
             }

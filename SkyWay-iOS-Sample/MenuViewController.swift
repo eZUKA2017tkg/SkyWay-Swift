@@ -19,7 +19,7 @@ class MenuViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         view.backgroundColor = UIColor.white
-        self.title = "Menu"
+        self.title = "でんわ"
         var rcClient: CGRect = self.view.bounds
         if let navigationBar = self.navigationController?.navigationBar {
             let rcTitle: CGRect = navigationBar.frame
@@ -38,7 +38,7 @@ class MenuViewController: UIViewController {
 
         let btnVideoChat: UIButton = UIButton(type: .roundedRect)
         btnVideoChat.tag = ViewTag.BTN_VIDEOCHAT.rawValue
-        btnVideoChat.setTitle("Media connection", for: UIControlState.normal)
+        btnVideoChat.setTitle("お母さん", for: UIControlState.normal)
         btnVideoChat.backgroundColor = UIColor.lightGray
         btnVideoChat.frame = rcVideoChat
         btnVideoChat.addTarget(self, action: #selector(self.touchUpInside(_:)), for: UIControlEvents.touchUpInside)
@@ -55,7 +55,7 @@ class MenuViewController: UIViewController {
 
         let btnChat: UIButton = UIButton(type: .roundedRect)
         btnChat.tag = ViewTag.BTN_CHAT.rawValue
-        btnChat.setTitle("Data connection", for: UIControlState.normal)
+        btnChat.setTitle("お父さん", for: UIControlState.normal)
         btnChat.backgroundColor = UIColor.lightGray
         btnChat.frame = rcChat
         btnChat.addTarget(self, action: #selector(self.touchUpInside(_:)), for: UIControlEvents.touchUpInside)
@@ -75,7 +75,7 @@ class MenuViewController: UIViewController {
             var vc: UIViewController? = nil
             if ViewTag.BTN_VIDEOCHAT.rawValue == btn.tag {
                 let vcVideoChat: MediaConnectionViewController = MediaConnectionViewController(nibName: nil, bundle: Bundle.main)
-                let strTitle: String = "MediaConnection"
+                let strTitle: String = "お母さん"
                 vcVideoChat.navigationItem.title = strTitle
                 vc = vcVideoChat
             } else if ViewTag.BTN_CHAT.rawValue == btn.tag {
