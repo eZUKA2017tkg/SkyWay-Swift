@@ -23,7 +23,6 @@
 		1744EA661F4D773C0041887B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1744EA5D1F4D773C0041887B /* Foundation.framework */; };
 		1744EA671F4D773C0041887B /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1744EA5E1F4D773C0041887B /* GLKit.framework */; };
 		1744EA691F4D773C0041887B /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1744EA601F4D773C0041887B /* VideoToolbox.framework */; };
-		1744EA6E1F4D78730041887B /* DataConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1744EA6A1F4D78730041887B /* DataConnectionViewController.swift */; };
 		1744EA6F1F4D78730041887B /* MediaConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1744EA6B1F4D78730041887B /* MediaConnectionViewController.swift */; };
 		1744EA701F4D78730041887B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1744EA6C1F4D78730041887B /* MenuViewController.swift */; };
 		1744EA711F4D78730041887B /* PeersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1744EA6D1F4D78730041887B /* PeersListViewController.swift */; };
@@ -31,7 +30,7 @@
 		5340AA321FB14C3E00170A11 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1744EA5F1F4D773C0041887B /* SystemConfiguration.framework */; };
 		5340AA4A1FB14ED500170A11 /* SkyWay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5340AA451FB14E2A00170A11 /* SkyWay.framework */; };
 		5340AA4B1FB14ED500170A11 /* SkyWay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5340AA451FB14E2A00170A11 /* SkyWay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		53759E4E1FBAA28200C2078B /* PeersConnecter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53759E4D1FBAA28200C2078B /* PeersConnecter.swift */; };
+		538AC6E21FBC10DD00CEDC79 /* DataConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538AC6E11FBC10DD00CEDC79 /* DataConnectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -68,14 +67,13 @@
 		1744EA5E1F4D773C0041887B /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		1744EA5F1F4D773C0041887B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		1744EA601F4D773C0041887B /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
-		1744EA6A1F4D78730041887B /* DataConnectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataConnectionViewController.swift; sourceTree = "<group>"; };
 		1744EA6B1F4D78730041887B /* MediaConnectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaConnectionViewController.swift; sourceTree = "<group>"; };
 		1744EA6C1F4D78730041887B /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		1744EA6D1F4D78730041887B /* PeersListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeersListViewController.swift; sourceTree = "<group>"; };
 		1744EA731F4D78EC0041887B /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		1744EA751F4D79710041887B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		5340AA451FB14E2A00170A11 /* SkyWay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SkyWay.framework; path = "SkyWay-iOS-Sample/SkyWay.framework"; sourceTree = "<group>"; };
-		53759E4D1FBAA28200C2078B /* PeersConnecter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeersConnecter.swift; sourceTree = "<group>"; };
+		538AC6E11FBC10DD00CEDC79 /* DataConnectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataConnectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,10 +122,9 @@
 			isa = PBXGroup;
 			children = (
 				1744EA391F4D74900041887B /* AppDelegate.swift */,
-				1744EA6A1F4D78730041887B /* DataConnectionViewController.swift */,
 				1744EA401F4D74900041887B /* Images.xcassets */,
 				1744EA6B1F4D78730041887B /* MediaConnectionViewController.swift */,
-				53759E4D1FBAA28200C2078B /* PeersConnecter.swift */,
+				538AC6E11FBC10DD00CEDC79 /* DataConnectionViewController.swift */,
 				1744EA6C1F4D78730041887B /* MenuViewController.swift */,
 				1744EA6D1F4D78730041887B /* PeersListViewController.swift */,
 				1744EA741F4D79710041887B /* LaunchScreen.xib */,
@@ -242,11 +239,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1744EA6E1F4D78730041887B /* DataConnectionViewController.swift in Sources */,
 				1744EA711F4D78730041887B /* PeersListViewController.swift in Sources */,
 				1744EA3A1F4D74900041887B /* AppDelegate.swift in Sources */,
 				1744EA6F1F4D78730041887B /* MediaConnectionViewController.swift in Sources */,
-				53759E4E1FBAA28200C2078B /* PeersConnecter.swift in Sources */,
+				538AC6E21FBC10DD00CEDC79 /* DataConnectionViewController.swift in Sources */,
 				1744EA701F4D78730041887B /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

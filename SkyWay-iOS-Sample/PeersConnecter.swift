@@ -17,11 +17,11 @@ class PeersConnecter: UITableViewController {
         let strTo = self.items?[indexPath.row]
         if let callback = self.callback {
             callback.dismiss(animated: true, completion: {
-                if let dcvc: DataConnectionViewController = callback as? DataConnectionViewController {
+                /*if let dcvc: DataConnectionViewController = callback as?    /* Chat開始 */ DataConnectionViewController {
                     if dcvc.responds(to: #selector(dcvc.callingTo(strDestId:))) {
                         dcvc.performSelector(inBackground: #selector(dcvc.callingTo(strDestId:)), with: strTo)
-                    }
-                } else if let mcvc: MediaConnectionViewController = callback as? MediaConnectionViewController {
+                    }                                                       /* Chat終わり */
+                } else*/ if let mcvc: MediaConnectionViewController = callback as? MediaConnectionViewController {
                     if mcvc.responds(to: #selector(mcvc.callingTo(strDestId:))) {
                         mcvc.performSelector(inBackground: #selector(mcvc.callingTo(strDestId:)), with: strTo)
                     }

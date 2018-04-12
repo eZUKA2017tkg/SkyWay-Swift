@@ -174,9 +174,11 @@ class MediaConnectionViewController: UIViewController, UINavigationControllerDel
         let btnCall: UIButton = UIButton(type: UIButtonType.roundedRect)
         btnCall.tag = ViewTag.TAG_WEBRTC_ACTION.rawValue
         btnCall.frame = rcCall
-        btnCall.setTitle("Call to", for: UIControlState.normal)
+        btnCall.setTitle("aaa"/*"Call to"*/, for: UIControlState.normal)
         btnCall.backgroundColor = UIColor.lightGray
-        btnCall.addTarget(self, action: #selector(self.onTouchUpInside(_:)), for: UIControlEvents.touchUpInside)
+        //btnCall.addTarget(self, action: #selector(self.onTouchUpInside(_:)), for: UIControlEvents.touchUpInside)
+        
+        btnCall.addTarget(self, action: #selector(self.callingTo(strDestId:)), for: UIControlEvents.touchUpInside)
 
         self.view.addSubview(btnCall)
 
@@ -232,7 +234,7 @@ class MediaConnectionViewController: UIViewController, UINavigationControllerDel
         //////////////////////////////////////////////////////////////////////
         ////////////////// START: Call SkyWay Peer   /////////////////////////
         //////////////////////////////////////////////////////////////////////
-        self.mediaConnection = self.peer?.call(withId: "mother"/*strDestId*/, stream: self.msLocal)
+        self.mediaConnection = self.peer?.call(withId: strDestId, stream: self.msLocal)
         
         self.setMediaCallbacks(media: self.mediaConnection)
         //////////////////////////////////////////////////////////////////////
